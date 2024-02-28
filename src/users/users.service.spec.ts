@@ -1,5 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { Role } from 'src/roles/roles.models';
+import { Role } from '../roles/roles.models';
 import { User } from './users.models';
 import { UsersService } from './users.service';
 import { getModelToken, SequelizeModule } from "@nestjs/sequelize";

@@ -1,7 +1,7 @@
 import { Body, Controller, Get, Post } from '@nestjs/common';
 import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
-import { IUser } from 'src/users/IUser';
-import { User } from 'src/users/users.models';
+import { IUser } from '../users/IUser';
+import { User } from '../users/users.models';
 import { AuthService } from './auth.service';
 
 @ApiTags('Авторизация')

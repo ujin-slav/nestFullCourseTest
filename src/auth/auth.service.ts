@@ -1,10 +1,10 @@
 import { HttpException, HttpStatus, Injectable, UnauthorizedException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/sequelize';
-import { User } from 'src/users/users.models';
+import { User } from '../users/users.models';
 import * as bcrypt from 'bcryptjs'
-import { IUser } from 'src/users/IUser';
+import { IUser } from '../users/IUser';
 import {JwtService} from "@nestjs/jwt";
-import { Role } from 'src/roles/roles.models';
+import { Role } from '../roles/roles.models';
 
 @Injectable()
 export class AuthService {

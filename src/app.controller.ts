@@ -1,7 +1,10 @@
 import { Controller, Get } from '@nestjs/common';
 import { AppService } from './app.service';
 
-@Controller('/api')
+@Controller('/')
 export class AppController {
-
+    @Get('')
+    getUsers():string{
+    return "Hello World!"
+}
 }

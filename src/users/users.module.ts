@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
 import { SequelizeModule } from '@nestjs/sequelize';
-import { AuthGuard } from 'src/auth/auth.guard';
-import { AuthModule } from 'src/auth/auth.module';
-import { Role } from 'src/roles/roles.models';
+import { AuthGuard } from '../auth/auth.guard';
+import { AuthModule } from '../auth/auth.module';
+import { Role } from '../roles/roles.models';
 import { UsersController } from './users.controller';
 import { User } from './users.models';
 import { UsersResolver } from './users.resolver';

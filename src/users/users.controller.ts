@@ -1,8 +1,8 @@
 import { Body, Controller, Get, Post, UseGuards, UsePipes } from '@nestjs/common';
 import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
-import { RolesGuard } from 'src/auth/role.guard';
-import { Roles } from 'src/decorators/roles.decorator';
-import { ValidationPipe } from 'src/pipes/validation.pipe';
+import { RolesGuard } from '../auth/role.guard';
+import { Roles } from '../decorators/roles.decorator';
+import { ValidationPipe } from '../pipes/validation.pipe';
 import { IUser } from './IUser';
 import { User } from './users.models';
 import { UsersService } from './users.service';

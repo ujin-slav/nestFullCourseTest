@@ -1,6 +1,6 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { BelongsTo, BelongsToMany, Column, DataType, ForeignKey, Model, Table } from 'sequelize-typescript';
-import { User } from 'src/users/users.models';
+import { User } from '../users/users.models';
 
 @Table({tableName:'posts'})
 export class Post extends Model<IPost> {

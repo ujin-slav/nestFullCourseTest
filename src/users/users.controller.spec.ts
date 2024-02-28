@@ -1,11 +1,11 @@
 import { JwtService } from '@nestjs/jwt';
 import { Test, TestingModule } from '@nestjs/testing';
-import { RolesGuard } from 'src/auth/role.guard';
+import { RolesGuard } from '../auth/role.guard';
 import { UsersController } from './users.controller';
 import { UsersResolver } from './users.resolver';
 import { UsersService } from './users.service';
 import { getModelToken } from "@nestjs/sequelize";
-import { Role } from 'src/roles/roles.models';
+import { Role } from '../roles/roles.models';
 import { User } from './users.models';
 import { find } from 'rxjs';
 

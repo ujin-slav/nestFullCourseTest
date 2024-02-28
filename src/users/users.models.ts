@@ -1,7 +1,7 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { BelongsToMany, Column, DataType, Model, Table } from 'sequelize-typescript';
-import { Role } from 'src/roles/roles.models';
-import { UserRoles } from 'src/roles/user_roles.models';
+import { Role } from '../roles/roles.models';
+import { UserRoles } from '../roles/user_roles.models';
 import { IUser } from './IUser';
 import { Field, ID, InputType, ObjectType } from '@nestjs/graphql'
 
